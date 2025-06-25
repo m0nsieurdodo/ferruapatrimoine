@@ -7,8 +7,7 @@ import {
   BarChart3, 
   Shield, 
   Clock, 
-  ArrowRight,
-  CheckCircle
+  ArrowRight
 } from 'lucide-react';
 
 const features = [
@@ -60,14 +59,7 @@ const steps = [
   }
 ];
 
-const benefits = [
-  "Automatisation du processus KYC",
-  "Réduction des erreurs de saisie",
-  "Conformité réglementaire garantie",
-  "Génération instantanée de documents",
-  "Dashboard analytique avancé",
-  "Interface moderne et intuitive"
-];
+
 
 export default function HomePage() {
   return (
@@ -142,40 +134,6 @@ export default function HomePage() {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-24 bg-white dark:bg-gray-950">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Pourquoi Choisir Notre Solution ?
-              </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300">
-                Des avantages concrets pour votre organisation
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700 dark:text-gray-300">{benefit}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Button asChild size="lg" className="text-lg px-8 py-3">
-                <Link href="/form">
-                  Démarrer Maintenant
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
