@@ -72,65 +72,6 @@ const benefits = [
 export default function HomePage() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
-        <div className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-100/[0.04]" />
-        <div className="relative container mx-auto px-4 py-24 lg:py-32">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/20 px-3 py-1 text-sm font-medium text-blue-800 dark:text-blue-200">
-                <Shield className="mr-2 h-4 w-4" />
-                Solution KYC Moderne
-              </span>
-            </div>
-            
-            <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
-              Gestion{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Intelligente
-              </span>
-              {' '}des Données KYC
-            </h1>
-            
-            <p className="mb-10 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Automatisez votre processus Know Your Customer avec notre plateforme moderne : 
-              formulaires intelligents, analyse de documents et dashboard analytique.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button asChild size="lg" className="text-lg px-8 py-3">
-                <Link href="/form">
-                  Commencer le Formulaire KYC
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3">
-                <Link href="/dashboard">
-                  Voir le Dashboard
-                  <BarChart3 className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">95%</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Temps gagné</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">100%</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Conformité</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">24/7</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Disponibilité</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section className="py-24 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
