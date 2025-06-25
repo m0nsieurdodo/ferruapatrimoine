@@ -7,7 +7,6 @@ import {
   BarChart3, 
   Shield, 
   Clock, 
-  Users,
   ArrowRight,
   CheckCircle
 } from 'lucide-react';
@@ -140,7 +139,7 @@ export default function HomePage() {
               Fonctionnalités Principales
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Une suite complète d'outils pour optimiser votre processus KYC
+              Une suite complète d&apos;outils pour optimiser votre processus KYC
             </p>
           </div>
 

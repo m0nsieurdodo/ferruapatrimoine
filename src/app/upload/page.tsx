@@ -6,7 +6,7 @@ export default function UploadPage() {
           Upload & Analyse PDF
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-          Cette page permettra d'uploader des documents PDF et d'extraire automatiquement les données KYC.
+          Cette page permettra d&apos;uploader des documents PDF et d&apos;extraire automatiquement les données KYC.
         </p>
         <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg p-6">
           <p className="text-purple-800 dark:text-purple-200">
