@@ -6,7 +6,6 @@ import {
   Upload, 
   BarChart3, 
   Shield, 
-  Clock, 
   ArrowRight
 } from 'lucide-react';
 
@@ -36,28 +35,7 @@ const features = [
   }
 ];
 
-const steps = [
-  {
-    number: "01",
-    title: "Saisie des Données",
-    description: "Remplissage du formulaire KYC avec les informations client essentielles"
-  },
-  {
-    number: "02", 
-    title: "Validation Automatique",
-    description: "Vérification et validation des données selon les critères de conformité"
-  },
-  {
-    number: "03",
-    title: "Génération Document",
-    description: "Création automatique du document Word avec les variables personnalisées"
-  },
-  {
-    number: "04",
-    title: "Suivi & Analyse",
-    description: "Monitoring des données via le dashboard avec graphiques et métriques"
-  }
-];
+
 
 
 
@@ -103,67 +81,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Process Steps */}
-      <section className="py-24 bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Processus en 4 Étapes
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Un workflow simplifié pour une gestion efficace des données KYC
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative">
-                  <div className="h-16 w-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform">
-                    {step.number}
-                  </div>
-                  {index < steps.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gray-200 dark:bg-gray-700 -translate-x-8" />
-                  )}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto text-white">
-            <Clock className="h-16 w-16 mx-auto mb-6" />
-            <h2 className="text-3xl font-bold mb-4">
-              Prêt à Moderniser Votre Processus KYC ?
-            </h2>
-            <p className="text-xl mb-8 text-blue-100">
-              Rejoignez les entreprises qui ont déjà optimisé leur gestion des données clients
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-3">
-                <Link href="/form">
-                  Créer un Dossier KYC
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-blue-600">
-                <Link href="/dashboard">
-                  Explorer le Dashboard
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
