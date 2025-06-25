@@ -18,7 +18,7 @@ import { useState, useEffect } from 'react';
 
 const navigation: NavItem[] = [
   { href: '/', label: 'Accueil', icon: 'Home' },
-  { href: '/form', label: 'Formulaire KYC', icon: 'FileText' },
+  { href: '/form', label: 'Inscription', icon: 'FileText' },
   { href: '/upload', label: 'Upload PDF', icon: 'Upload' },
   { href: '/dashboard', label: 'Dashboard', icon: 'BarChart3' },
 ];

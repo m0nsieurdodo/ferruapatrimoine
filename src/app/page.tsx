@@ -12,7 +12,7 @@ import {
 const features = [
   {
     icon: FileText,
-    title: "Formulaire KYC Intelligent",
+    title: "Inscription Intelligente",
     description: "Collecte des informations clients avec validation en temps réel et génération automatique de documents.",
     href: "/form"
   },
@@ -50,7 +50,7 @@ export default function HomePage() {
               Fonctionnalités Principales
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Une suite complète d&apos;outils pour optimiser votre processus KYC
+              Une suite complète d&apos;outils pour optimiser votre processus d&apos;inscription
             </p>
           </div>
 
